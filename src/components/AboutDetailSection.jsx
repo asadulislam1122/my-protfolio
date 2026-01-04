@@ -125,6 +125,122 @@ const AboutDetailSection = () => {
         <div className="space-y-5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
+              <span className="h-6 w-1 bg-gradient-to-b from-emerald-400 to-teal-400 rounded-full"></span>
+              <h2 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wide">Education</h2>
+            </div>
+            <span className="text-[10px] font-bold tracking-wider text-gray-400 uppercase border border-gray-200 dark:border-white/10 px-2 py-1 rounded-md">
+              Academic Background
+            </span>
+          </div>
+          
+          <div className="space-y-4">
+            {/* Polytechnic Institute */}
+            <div className="group bg-white dark:bg-surface-dark rounded-xl p-5 border border-gray-100 dark:border-white/5 shadow-sm hover:border-primary/30 transition-all">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-[20px]">apartment</span>
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-start justify-between mb-2">
+                    <div>
+                      <h3 className="font-bold text-gray-900 dark:text-white text-base">Diploma in Computer Science</h3>
+                      <p className="text-sm text-primary font-medium">Thakurgoan Polytechnic Institute</p>
+                    </div>
+                    <div className="text-right">
+                      <span className="text-xs font-bold text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-md block mb-1">
+                        2022 - 2023
+                      </span>
+                      <span className="text-xs font-bold text-green-600 bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded-md">
+                        7th Semester
+                      </span>
+                    </div>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    Currently pursuing Diploma in Computer Science with focus on software development, programming fundamentals, and modern web technologies. Gaining hands-on experience in various programming languages and development frameworks.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    <span className="px-2 py-1 text-xs font-medium bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-md">
+                      Computer Science
+                    </span>
+                    <span className="px-2 py-1 text-xs font-medium bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 rounded-md">
+                      Programming
+                    </span>
+                    <span className="px-2 py-1 text-xs font-medium bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 rounded-md">
+                      Software Development
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Programming Hero Course */}
+            <div className="group bg-white dark:bg-surface-dark rounded-xl p-5 border border-gray-100 dark:border-white/5 shadow-sm hover:border-primary/30 transition-all">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-[20px]">code</span>
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-start justify-between mb-2">
+                    <div>
+                      <h3 className="font-bold text-gray-900 dark:text-white text-base">Complete Web Development Course</h3>
+                      <p className="text-sm text-primary font-medium">Programming Hero Bangladesh</p>
+                    </div>
+                    <span className="text-xs font-bold text-orange-600 bg-orange-50 dark:bg-orange-900/20 px-2 py-1 rounded-md">
+                      Top Course
+                    </span>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    Completed comprehensive web development training from Bangladesh's leading programming education platform. Mastered modern web technologies including React, JavaScript, Node.js, and full-stack development practices.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    <span className="px-2 py-1 text-xs font-medium bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-md">
+                      React.js
+                    </span>
+                    <span className="px-2 py-1 text-xs font-medium bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 dark:text-yellow-300 rounded-md">
+                      JavaScript
+                    </span>
+                    <span className="px-2 py-1 text-xs font-medium bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 rounded-md">
+                      Full-Stack
+                    </span>
+                    <span className="px-2 py-1 text-xs font-medium bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 rounded-md">
+                      Web Development
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Additional Skills & Certifications */}
+            <div className="bg-gradient-to-r from-primary/5 to-purple-500/5 dark:from-primary/10 dark:to-purple-500/10 rounded-xl p-4 border border-primary/20 dark:border-primary/30">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="material-symbols-outlined text-primary text-[20px]">verified</span>
+                <h3 className="font-bold text-gray-900 dark:text-white text-sm">Technical Expertise</h3>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-primary rounded-full"></span>
+                  <span className="text-sm text-gray-700 dark:text-gray-300">Frontend Development</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-primary rounded-full"></span>
+                  <span className="text-sm text-gray-700 dark:text-gray-300">React & Next.js</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-primary rounded-full"></span>
+                  <span className="text-sm text-gray-700 dark:text-gray-300">MongoDB Database</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-primary rounded-full"></span>
+                  <span className="text-sm text-gray-700 dark:text-gray-300">Responsive Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="space-y-5">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
               <span className="h-6 w-1 bg-gradient-to-b from-purple-400 to-pink-400 rounded-full"></span>
               <h2 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wide">Technical Skills</h2>
             </div>

@@ -72,14 +72,17 @@ const ContactSection = () => {
       case 'Email':
         window.location.href = 'mailto:asadulislam0288@gmail.com'
         break
+      case 'Phone':
+        window.location.href = 'tel:+8801327822021'
+        break
+      case 'WhatsApp':
+        window.open('https://wa.me/8801327822021', '_blank')
+        break
       case 'LinkedIn':
         window.open('https://linkedin.com/in/your-profile', '_blank')
         break
       case 'GitHub':
         window.open('https://github.com/your-username', '_blank')
-        break
-      case 'Dribbble':
-        window.open('https://dribbble.com/your-profile', '_blank')
         break
       default:
         console.log(`${platform} clicked`)
@@ -87,9 +90,10 @@ const ContactSection = () => {
   }
 
   const socialIcons = [
-    { platform: 'LinkedIn', icon: 'work' },
-    { platform: 'Dribbble', icon: 'palette' },
     { platform: 'Email', icon: 'alternate_email' },
+    { platform: 'Phone', icon: 'call' },
+    { platform: 'WhatsApp', icon: 'chat' },
+    { platform: 'LinkedIn', icon: 'work' },
     { platform: 'GitHub', icon: 'code' }
   ]
 
@@ -149,6 +153,72 @@ const ContactSection = () => {
           >
             Ready to bring your ideas to life? I'd love to hear about your project and discuss how we can work together.
           </p>
+        </div>
+
+        {/* Direct Contact Information */}
+        <div 
+          className="max-w-4xl mx-auto w-full"
+          style={{ 
+            animation: isVisible ? 'fadeInUp 0.6s ease-out 0.5s both' : 'none'
+          }}
+        >
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            {/* Email */}
+            <div className="group bg-white dark:bg-white/5 rounded-2xl p-6 border border-gray-200 dark:border-white/10 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300">
+              <div className="flex flex-col items-center text-center space-y-3">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <span className="material-symbols-outlined text-[24px]">alternate_email</span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 dark:text-white text-sm uppercase tracking-wide">Email</h3>
+                  <a 
+                    href="mailto:asadulislam0288@gmail.com"
+                    className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors text-sm font-medium"
+                  >
+                    asadulislam0288@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Phone */}
+            <div className="group bg-white dark:bg-white/5 rounded-2xl p-6 border border-gray-200 dark:border-white/10 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300">
+              <div className="flex flex-col items-center text-center space-y-3">
+                <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center text-green-600 group-hover:bg-green-500 group-hover:text-white transition-all duration-300">
+                  <span className="material-symbols-outlined text-[24px]">call</span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 dark:text-white text-sm uppercase tracking-wide">Phone</h3>
+                  <a 
+                    href="tel:+8801327822021"
+                    className="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-white transition-colors text-sm font-medium"
+                  >
+                    +880 1327 822021
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* WhatsApp */}
+            <div className="group bg-white dark:bg-white/5 rounded-2xl p-6 border border-gray-200 dark:border-white/10 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300">
+              <div className="flex flex-col items-center text-center space-y-3">
+                <div className="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+                  <span className="material-symbols-outlined text-[24px]">chat</span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 dark:text-white text-sm uppercase tracking-wide">WhatsApp</h3>
+                  <a 
+                    href="https://wa.me/8801327822021"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-white transition-colors text-sm font-medium"
+                  >
+                    +880 1327 822021
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div 
@@ -285,7 +355,7 @@ const ContactSection = () => {
                   animationFillMode: 'both'
                 }}
               ></div>
-              <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">Or connect with me</span>
+              <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">Quick contact options</span>
               <div 
                 className="h-px bg-gray-200 dark:bg-white/10 flex-1 animate-expand-width"
                 style={{ 
