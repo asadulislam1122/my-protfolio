@@ -77,7 +77,7 @@ const AboutDetailSection = () => {
               <div className="absolute -inset-1 bg-gradient-to-tr from-primary to-purple-400 rounded-full opacity-60 blur-md group-hover:opacity-100 transition duration-500"></div>
               <div className="relative h-32 w-32 rounded-full overflow-hidden border-4 border-white dark:border-background-dark shadow-2xl">
                 <img 
-                  alt="Portrait of MD Asadullah" 
+                  alt="Portrait of Asadullah" 
                   className="h-full w-full object-cover transform transition-transform duration-700 group-hover:scale-110" 
                   src="https://i.ibb.co.com/p6xVHDq6/e05fca6d-15af-4b6c-b0b9-b052dd9b1c29.jpg"
                 />
@@ -91,7 +91,7 @@ const AboutDetailSection = () => {
                 Building digital <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">masterpieces</span> one pixel at a time.
               </h1>
               <p className="text-gray-500 dark:text-gray-400 font-medium text-sm">
-                Frontend Developer & UI Specialist
+                MERN Stack Developer (React) | Future Full-Stack Developer
               </p>
             </div>
           </div>
@@ -114,10 +114,20 @@ const AboutDetailSection = () => {
           </div>
           <div className="prose prose-sm dark:prose-invert leading-relaxed text-gray-600 dark:text-gray-400 max-w-none">
             <p>
-              Hello! I'm MD Asadullah. With a unique background in graphic design, I bridge the gap between pure aesthetics and engineering. I don't just build websites; I craft accessible, pixel-perfect experiences that feel alive.
+              Hello! I'm MD Asadullah — a passionate MERN Stack Web Developer.
             </p>
             <p>
-              I'm deeply passionate about open source, performance optimization, and creating intuitive interfaces that genuinely delight users on any device.
+              I build modern, responsive, and user-friendly web applications using HTML, CSS, Tailwind CSS, JavaScript, React, Node.js, MongoDB, and Firebase.
+            </p>
+            <p>
+              With a background in graphic design, I bring strong UI/UX sense to every project, creating experiences that are both visually appealing and easy to use. I enjoy turning ideas into real-world digital products through clean code, performance optimization, and accessible design.
+            </p>
+            <p>
+              I'm continuously learning and growing as a Full-Stack Developer, driven by hard work, consistency, and curiosity.
+            </p>
+            <p className="flex items-start gap-2">
+              <span className="text-primary text-lg">🎯</span>
+              <span><strong>My goal</strong> is to build impactful web applications, contribute to meaningful projects, and grow as a professional developer.</span>
             </p>
           </div>
         </div>

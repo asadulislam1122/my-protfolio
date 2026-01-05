@@ -23,6 +23,30 @@ const PortfolioSection = () => {
       image: "https://i.ibb.co.com/Dg6GW9XT/zap.png",
       status: "Live",
       liveUrl: "https://zip-shift-e182c.web.app/"
+    },
+    {
+      title: "Sari App",
+      description: "Beautiful e-commerce platform for traditional sarees with modern shopping experience and elegant design",
+      tech: ["React", "Tailwind CSS", "JavaScript", "Firebase"],
+      image: "https://i.ibb.co.com/wZLPG5mQ/sari.png",
+      status: "Live",
+      liveUrl: "https://sari-app-as.pages.dev/"
+    },
+    {
+      title: "GameHub App",
+      description: "Interactive gaming platform with multiple games, leaderboards, and social features for gamers",
+      tech: ["React", "JavaScript", "CSS3", "API Integration"],
+      image: "https://i.ibb.co.com/1JmvJN2P/game.png",
+      status: "Live",
+      liveUrl: "https://gamehub-app.pages.dev/"
+    },
+    {
+      title: "Dragon News",
+      description: "Modern news portal with real-time updates, categorized articles, and responsive design for all devices",
+      tech: ["React", "Firebase", "Tailwind CSS", "News API"],
+      image: "https://i.ibb.co.com/h1n8PDKn/news.png",
+      status: "Live",
+      liveUrl: "https://dragon-news-as.pages.dev/"
     }
   ]
 

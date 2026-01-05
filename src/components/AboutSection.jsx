@@ -70,14 +70,6 @@ const AboutSection = () => {
         ></div>
         
         <div className={`relative ${isVisible ? 'animate-fadeInUp' : 'opacity-0'}`}>
-          <div 
-            className="absolute -top-12 -right-4 text-[140px] font-black text-gray-200 dark:text-white/5 leading-none select-none -z-10 pointer-events-none opacity-50"
-            style={{ 
-              animation: isVisible ? 'fadeInScale 0.8s ease-out 0.5s both' : 'none'
-            }}
-          >
-            01
-          </div>
           <div className="flex flex-col gap-6">
             <div 
               className="space-y-3 pr-8"
@@ -116,7 +108,7 @@ const AboutSection = () => {
                 <div className="absolute inset-0 bg-primary rounded-2xl rotate-6 opacity-20 group-hover:rotate-12 transition-transform duration-500 ease-out animate-float"></div>
                 <div className="relative h-32 w-28 rounded-2xl overflow-hidden border-2 border-white dark:border-gray-800 shadow-xl bg-gray-200 dark:bg-gray-800">
                   <img 
-                    alt="Portrait of MD Asadullah, frontend developer" 
+                    alt="Portrait of MD Asadullah, MERN Stack developer" 
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" 
                     src="https://i.ibb.co.com/p6xVHDq6/e05fca6d-15af-4b6c-b0b9-b052dd9b1c29.jpg"
                   />
@@ -164,10 +156,10 @@ const AboutSection = () => {
             </h2>
             <div className="prose prose-sm dark:prose-invert leading-relaxed text-gray-600 dark:text-gray-400">
               <p style={{ animation: isVisible ? 'fadeInUp 0.6s ease-out 0.8s both' : 'none' }}>
-                Hello! I'm MD Asadullah, a frontend developer with a background in graphic design. This unique blend allows me to bridge the gap between design and engineering, ensuring that the final product not only functions perfectly but looks stunning.
+                Hello! I'm MD Asadullah, a passionate MERN Stack developer with a background in graphic design. This unique blend allows me to bridge the gap between design and full-stack engineering, ensuring that applications not only function perfectly but deliver stunning user experiences.
               </p>
               <p style={{ animation: isVisible ? 'fadeInUp 0.6s ease-out 1.0s both' : 'none' }}>
-                I specialize in building accessible, pixel-perfect web experiences using modern technologies. I'm passionate about open source, performance optimization, and creating intuitive user interfaces that delight users.
+                I specialize in building modern, scalable web applications using MongoDB, Express.js, React, and Node.js. I'm passionate about clean code, performance optimization, and creating intuitive interfaces that delight users across all devices.
               </p>
             </div>
           </div>

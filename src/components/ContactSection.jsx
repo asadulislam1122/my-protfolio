@@ -79,10 +79,13 @@ const ContactSection = () => {
         window.open('https://wa.me/8801327822021', '_blank')
         break
       case 'LinkedIn':
-        window.open('https://linkedin.com/in/your-profile', '_blank')
+        window.open('https://www.linkedin.com/in/md-asadullah-a62863396/', '_blank')
         break
       case 'GitHub':
-        window.open('https://github.com/your-username', '_blank')
+        window.open('https://github.com/asadulislam1122', '_blank')
+        break
+      case 'Facebook':
+        window.open('https://www.facebook.com/prince.asadul.426723', '_blank')
         break
       default:
         console.log(`${platform} clicked`)
@@ -90,11 +93,9 @@ const ContactSection = () => {
   }
 
   const socialIcons = [
-    { platform: 'Email', icon: 'alternate_email' },
-    { platform: 'Phone', icon: 'call' },
-    { platform: 'WhatsApp', icon: 'chat' },
-    { platform: 'LinkedIn', icon: 'work' },
-    { platform: 'GitHub', icon: 'code' }
+    { platform: 'LinkedIn', icon: 'https://img.icons8.com/color/48/linkedin.png', type: 'image' },
+    { platform: 'GitHub', icon: 'https://img.icons8.com/color-glass/48/github--v1.png', type: 'image' },
+    { platform: 'Facebook', icon: 'https://img.icons8.com/color/48/facebook-new.png', type: 'image' }
   ]
 
   return (
@@ -157,23 +158,23 @@ const ContactSection = () => {
 
         {/* Direct Contact Information */}
         <div 
-          className="max-w-4xl mx-auto w-full"
+          className="max-w-5xl mx-auto w-full mb-12"
           style={{ 
             animation: isVisible ? 'fadeInUp 0.6s ease-out 0.5s both' : 'none'
           }}
         >
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* Email */}
-            <div className="group bg-white dark:bg-white/5 rounded-2xl p-6 border border-gray-200 dark:border-white/10 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300">
-              <div className="flex flex-col items-center text-center space-y-3">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                  <span className="material-symbols-outlined text-[24px]">alternate_email</span>
+            <div className="group bg-gradient-to-br from-white to-gray-50 dark:from-white/5 dark:to-white/10 rounded-3xl p-8 border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:border-primary/40 hover:-translate-y-2 transition-all duration-500">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center text-primary group-hover:bg-gradient-to-br group-hover:from-primary group-hover:to-primary/80 group-hover:text-white group-hover:scale-110 transition-all duration-300 shadow-lg">
+                  <span className="material-symbols-outlined text-[28px]">alternate_email</span>
                 </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 dark:text-white text-sm uppercase tracking-wide">Email</h3>
+                <div className="space-y-2">
+                  <h3 className="font-bold text-gray-900 dark:text-white text-base uppercase tracking-wide">Email Address</h3>
                   <a 
                     href="mailto:asadulislam0288@gmail.com"
-                    className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors text-sm font-medium"
+                    className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors text-sm font-medium block break-all"
                   >
                     asadulislam0288@gmail.com
                   </a>
@@ -182,13 +183,13 @@ const ContactSection = () => {
             </div>
 
             {/* Phone */}
-            <div className="group bg-white dark:bg-white/5 rounded-2xl p-6 border border-gray-200 dark:border-white/10 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300">
-              <div className="flex flex-col items-center text-center space-y-3">
-                <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center text-green-600 group-hover:bg-green-500 group-hover:text-white transition-all duration-300">
-                  <span className="material-symbols-outlined text-[24px]">call</span>
+            <div className="group bg-gradient-to-br from-white to-gray-50 dark:from-white/5 dark:to-white/10 rounded-3xl p-8 border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:border-green-400/40 hover:-translate-y-2 transition-all duration-500">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500/10 to-green-500/20 flex items-center justify-center text-green-600 group-hover:bg-gradient-to-br group-hover:from-green-500 group-hover:to-green-600 group-hover:text-white group-hover:scale-110 transition-all duration-300 shadow-lg">
+                  <span className="material-symbols-outlined text-[28px]">call</span>
                 </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 dark:text-white text-sm uppercase tracking-wide">Phone</h3>
+                <div className="space-y-2">
+                  <h3 className="font-bold text-gray-900 dark:text-white text-base uppercase tracking-wide">Phone Number</h3>
                   <a 
                     href="tel:+8801327822021"
                     className="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-white transition-colors text-sm font-medium"
@@ -200,13 +201,13 @@ const ContactSection = () => {
             </div>
 
             {/* WhatsApp */}
-            <div className="group bg-white dark:bg-white/5 rounded-2xl p-6 border border-gray-200 dark:border-white/10 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300">
-              <div className="flex flex-col items-center text-center space-y-3">
-                <div className="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-                  <span className="material-symbols-outlined text-[24px]">chat</span>
+            <div className="group bg-gradient-to-br from-white to-gray-50 dark:from-white/5 dark:to-white/10 rounded-3xl p-8 border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:border-emerald-400/40 hover:-translate-y-2 transition-all duration-500">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500/10 to-emerald-500/20 flex items-center justify-center text-emerald-600 group-hover:bg-gradient-to-br group-hover:from-emerald-500 group-hover:to-emerald-600 group-hover:text-white group-hover:scale-110 transition-all duration-300 shadow-lg">
+                  <span className="material-symbols-outlined text-[28px]">chat</span>
                 </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 dark:text-white text-sm uppercase tracking-wide">WhatsApp</h3>
+                <div className="space-y-2">
+                  <h3 className="font-bold text-gray-900 dark:text-white text-base uppercase tracking-wide">WhatsApp</h3>
                   <a 
                     href="https://wa.me/8801327822021"
                     target="_blank"
@@ -342,22 +343,22 @@ const ContactSection = () => {
           </form>
 
           <div 
-            className="text-center space-y-6"
+            className="text-center space-y-8"
             style={{ 
               animation: isVisible ? 'fadeInUp 0.6s ease-out 1.0s both' : 'none'
             }}
           >
-            <div className="flex items-center gap-4 justify-center">
+            <div className="flex items-center gap-6 justify-center">
               <div 
-                className="h-px bg-gray-200 dark:bg-white/10 flex-1 animate-expand-width"
+                className="h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-white/20 to-transparent flex-1 animate-expand-width"
                 style={{ 
                   animationDelay: isVisible ? '1.0s' : '0s',
                   animationFillMode: 'both'
                 }}
               ></div>
-              <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">Quick contact options</span>
+              <span className="text-sm text-gray-500 dark:text-gray-400 font-medium px-4 py-2 bg-white dark:bg-white/5 rounded-full border border-gray-200 dark:border-white/10">Quick contact options</span>
               <div 
-                className="h-px bg-gray-200 dark:bg-white/10 flex-1 animate-expand-width"
+                className="h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-white/20 to-transparent flex-1 animate-expand-width"
                 style={{ 
                   animationDelay: isVisible ? '1.2s' : '0s',
                   animationFillMode: 'both'
@@ -365,23 +366,22 @@ const ContactSection = () => {
               ></div>
             </div>
             
-            <div className="flex items-center justify-center gap-4">
+            <div className="flex items-center justify-center gap-6">
               {socialIcons.map((social, index) => (
                 <button
                   key={social.platform}
                   onClick={() => handleSocialClick(social.platform)}
                   aria-label={social.platform}
-                  className="flex h-12 w-12 items-center justify-center rounded-full bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-600 dark:text-gray-400 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-all duration-300 hover:scale-110 hover:rotate-3 active:scale-90"
+                  className="group flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-white to-gray-50 dark:from-white/5 dark:to-white/10 border border-gray-200 dark:border-white/10 hover:bg-white hover:shadow-2xl dark:hover:bg-white/10 hover:border-gray-300 dark:hover:border-white/20 transition-all duration-300 hover:scale-110 hover:-translate-y-1 active:scale-95 shadow-lg"
                   style={{ 
                     animation: isVisible ? `fadeInScale 0.4s ease-out ${1.4 + index * 0.1}s both` : 'none'
                   }}
                 >
-                  <span 
-                    className="material-symbols-outlined text-[20px] animate-float"
-                    style={{ animationDelay: `${index * 0.2}s` }}
-                  >
-                    {social.icon}
-                  </span>
+                  <img 
+                    src={social.icon} 
+                    alt={social.platform}
+                    className="w-8 h-8 transition-all duration-300"
+                  />
                 </button>
               ))}
             </div>
@@ -395,7 +395,7 @@ const ContactSection = () => {
           }}
         >
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            © 2024 MD Asadullah. Built with React & Tailwind CSS
+            © 2025 MD Asadullah. Built with React & Tailwind CSS
           </p>
         </div>
       </main>
